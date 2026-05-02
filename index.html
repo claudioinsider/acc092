@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Neto Comercio de Material de Construcao Ltda (Olsson Materiais de Construção) - materiais de construção em Balneário Camboriú - SC.">
+<meta name="keywords" content="material de construção, Balneário Camboriú, SC, Olsson, ferragens, cimento, construção civil, reforma">
+<meta name="author" content="Neto Comercio de Material de Construcao Ltda">
+<meta name="geo.region" content="BR-SC">
+<meta name="geo.placename" content="Balneário Camboriú">
+<title>Olsson Materiais de Construção | Balneário Camboriú – SC</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='6' fill='%230d3b6b'/><text y='.9em' font-size='64' font-family='Arial,sans-serif' font-weight='900' fill='%23f5a623' x='14'>O</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --blue:#0d3b6b;
+  --blue-mid:#1a5fa8;
+  --blue-light:#2d82d4;
+  --sky:#e8f4fd;
+  --orange:#f5a623;
+  --orange-dark:#d4841a;
+  --white:#ffffff;
+  --offwhite:#f7f9fc;
+  --gray:#5a6a78;
+  --light-border:#dde6ee;
+  --dark:#0a1e30;
+}
+html{scroll-behavior:smooth;}
+body{font-family:'Familjen Grotesk',sans-serif;background:var(--offwhite);color:var(--dark);overflow-x:hidden;}
+::-webkit-scrollbar{width:5px;}
+::-webkit-scrollbar-thumb{background:var(--blue-light);border-radius:3px;}
+
+nav{position:fixed;top:0;left:0;right:0;z-index:999;background:white;border-bottom:3px solid var(--blue);box-shadow:0 2px 16px rgba(13,59,107,.08);}
+.nav-inner{max-width:1200px;margin:0 auto;padding:.85rem 4vw;display:flex;justify-content:space-between;align-items:center;}
+.logo{display:flex;align-items:center;gap:.8rem;text-decoration:none;}
+.logo-sq{width:42px;height:42px;background:var(--blue);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-weight:900;color:var(--orange);font-family:'Newsreader',serif;border-radius:4px;}
+.logo-name{font-size:1.15rem;font-weight:700;color:var(--blue);line-height:1;}
+.logo-sub{font-size:.6rem;color:var(--gray);letter-spacing:2px;text-transform:uppercase;}
+.nav-links{display:flex;gap:2rem;list-style:none;}
+.nav-links a{font-size:.86rem;font-weight:500;color:var(--gray);text-decoration:none;transition:color .25s;}
+.nav-links a:hover{color:var(--blue-mid);}
+.nav-cta{background:var(--orange)!important;color:var(--dark)!important;padding:.45rem 1.2rem;border-radius:4px;font-weight:700!important;transition:background .25s!important;}
+.nav-cta:hover{background:var(--orange-dark)!important;color:white!important;}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:5px;}
+.hamburger span{display:block;width:22px;height:2px;background:var(--blue);}
+
+/* HERO */
+#inicio{min-height:100vh;display:flex;align-items:center;padding:110px 4vw 60px;position:relative;overflow:hidden;
+  background:linear-gradient(160deg,var(--blue) 0%,#0d2a4a 50%,#071826 100%);}
+.hero-grid-bg{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.03) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.03) 1px,transparent 1px);background-size:50px 50px;}
+.hero-orange-glow{position:absolute;right:-60px;bottom:-60px;width:500px;height:500px;background:radial-gradient(circle,rgba(245,166,35,.12) 0%,transparent 65%);border-radius:50%;}
+.hero-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:4rem;align-items:center;position:relative;z-index:1;width:100%;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,.15);border:1px solid rgba(245,166,35,.3);color:var(--orange);padding:.35rem 1rem;border-radius:4px;font-size:.72rem;font-weight:700;letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1.5rem;}
+.hero h1{font-family:'Newsreader',serif;font-size:clamp(2.6rem,4.5vw,4.2rem);font-weight:600;color:white;line-height:1.08;margin-bottom:1.3rem;}
+.hero h1 .hl{color:var(--orange);font-style:italic;}
+.hero-desc{font-size:.98rem;line-height:1.75;color:rgba(255,255,255,.6);max-width:490px;margin-bottom:2.5rem;}
+.hero-btns{display:flex;gap:1rem;flex-wrap:wrap;}
+.btn-orange{display:inline-flex;align-items:center;gap:8px;background:var(--orange);color:var(--dark);padding:.9rem 2rem;border-radius:4px;font-weight:700;font-size:.9rem;text-decoration:none;transition:all .3s;border:none;cursor:pointer;}
+.btn-orange:hover{background:var(--orange-dark);color:white;transform:translateY(-2px);box-shadow:0 8px 24px rgba(245,166,35,.4);}
+.btn-outline-w{display:inline-flex;align-items:center;gap:8px;border:1.5px solid rgba(255,255,255,.3);color:rgba(255,255,255,.75);padding:.9rem 2rem;border-radius:4px;font-weight:600;font-size:.9rem;text-decoration:none;transition:all .3s;}
+.btn-outline-w:hover{border-color:var(--orange);color:var(--orange);}
+.hero-right{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.h-metric{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:10px;padding:1.4rem;text-align:center;transition:border .3s;}
+.h-metric:hover{border-color:rgba(245,166,35,.4);}
+.h-metric .ico{font-size:2rem;display:block;margin-bottom:.6rem;}
+.h-metric .val{font-family:'Newsreader',serif;font-size:1.8rem;font-weight:600;color:var(--orange);line-height:1;}
+.h-metric .lbl{font-size:.7rem;color:rgba(255,255,255,.4);letter-spacing:1.5px;text-transform:uppercase;margin-top:.3rem;}
+.hero-bar{position:absolute;bottom:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--blue-mid),var(--orange),var(--blue-light));}
+
+/* SOBRE */
+#sobre{padding:90px 4vw;background:white;}
+.sg2{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:5rem;align-items:center;}
+.sv2{position:relative;}
+.sv2-box{background:var(--sky);border-radius:12px;padding:3rem;border:1px solid var(--light-border);position:relative;}
+.sv2-box::before{content:'';position:absolute;top:0;left:2rem;right:2rem;height:3px;background:linear-gradient(90deg,var(--blue),var(--orange));border-radius:3px;}
+.sv2-stats{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem;}
+.sv2-s{background:white;border-radius:8px;padding:1.2rem;text-align:center;box-shadow:0 2px 10px rgba(0,0,0,.05);}
+.sv2-s .n{font-family:'Newsreader',serif;font-size:1.9rem;font-weight:600;color:var(--blue-mid);line-height:1;}
+.sv2-s .l{font-size:.7rem;color:var(--gray);text-transform:uppercase;letter-spacing:1.5px;margin-top:.3rem;}
+.kicker{font-size:.71rem;font-weight:700;color:var(--blue-mid);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:.6rem;display:flex;align-items:center;gap:.5rem;}
+.kicker::before{content:'';display:block;width:24px;height:2px;background:var(--blue-mid);}
+.st2 h2{font-family:'Newsreader',serif;font-size:2.2rem;color:var(--blue);margin-bottom:1.2rem;line-height:1.15;}
+.st2 p{font-size:.94rem;line-height:1.8;color:var(--gray);margin-bottom:1rem;}
+.cnpj-tag2{display:inline-flex;align-items:center;gap:.6rem;background:var(--sky);border:1px solid var(--light-border);padding:.5rem 1rem;border-radius:6px;margin-top:.8rem;}
+.cnpj-tag2 span{font-size:.78rem;color:var(--blue);font-weight:700;}
+
+/* PRODUTOS */
+#produtos{padding:90px 4vw;background:var(--offwhite);}
+.sh2{text-align:center;margin-bottom:3.5rem;}
+.sh2 .kicker{justify-content:center;}
+.sh2 h2{font-family:'Newsreader',serif;font-size:2.2rem;color:var(--blue);}
+.sh2 p{color:var(--gray);font-size:.93rem;max-width:480px;margin:.7rem auto 0;}
+.pg2{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.pc2{background:white;border-radius:10px;padding:2rem 1.6rem;border:1px solid var(--light-border);transition:all .3s;position:relative;overflow:hidden;}
+.pc2::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--blue-mid),var(--blue-light));transform:scaleX(0);transform-origin:left;transition:transform .35s;}
+.pc2:hover{border-color:var(--blue-light);transform:translateY(-5px);box-shadow:0 12px 32px rgba(13,59,107,.1);}
+.pc2:hover::after{transform:scaleX(1);}
+.pc2-icon{font-size:2.5rem;margin-bottom:1rem;display:block;}
+.pc2 h3{font-size:1.05rem;font-weight:700;color:var(--blue);margin-bottom:.5rem;}
+.pc2 p{font-size:.86rem;color:var(--gray);line-height:1.65;}
+
+/* DEPOIMENTOS */
+#depoimentos{padding:90px 4vw;background:var(--blue);}
+.dg2{max-width:1200px;margin:2.5rem auto 0;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;}
+.dc2{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:2rem;transition:all .3s;}
+.dc2:hover{background:rgba(255,255,255,.09);transform:translateY(-4px);}
+.ds2{color:var(--orange);font-size:.82rem;letter-spacing:2px;margin-bottom:1rem;}
+.dt2{font-size:.9rem;line-height:1.75;color:rgba(255,255,255,.6);font-style:italic;margin-bottom:1.5rem;}
+.da2{display:flex;align-items:center;gap:.8rem;}
+.dav2{width:38px;height:38px;background:rgba(245,166,35,.25);border:1px solid rgba(245,166,35,.4);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1rem;color:var(--orange);font-weight:700;font-family:'Newsreader',serif;}
+.dn2{font-weight:700;font-size:.87rem;color:rgba(255,255,255,.85);}
+.dr2{font-size:.76rem;color:rgba(255,255,255,.4);}
+
+/* CONTATO */
+#contato{padding:90px 4vw;background:var(--offwhite);}
+.ctg2{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1.2fr;gap:5rem;}
+.cti2 .kicker{color:var(--blue-mid);}
+.cti2 h2{font-family:'Newsreader',serif;font-size:2.2rem;color:var(--blue);margin-bottom:1rem;}
+.cti2 p{color:var(--gray);font-size:.93rem;line-height:1.7;margin-bottom:2rem;}
+.ci2{display:flex;align-items:flex-start;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--light-border);}
+.ci2:last-of-type{border:none;}
+.ci2-icon{width:36px;height:36px;background:var(--sky);border:1px solid var(--light-border);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.9rem;flex-shrink:0;}
+.ci2 h4{font-size:.68rem;font-weight:700;color:var(--blue-mid);letter-spacing:2px;text-transform:uppercase;margin-bottom:.2rem;}
+.ci2 p,.ci2 a{font-size:.9rem;color:var(--gray);text-decoration:none;}
+.ci2 a:hover{color:var(--blue-mid);}
+.fbox{background:white;border-radius:12px;padding:2.5rem;box-shadow:0 4px 20px rgba(0,0,0,.06);border:1px solid var(--light-border);}
+.fbox h3{font-family:'Newsreader',serif;font-size:1.6rem;color:var(--blue);margin-bottom:1.5rem;}
+.fg2{margin-bottom:1rem;}
+.fg2 label{display:block;font-size:.69rem;font-weight:700;color:var(--gray);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:.4rem;}
+.fg2 input,.fg2 textarea,.fg2 select{width:100%;border:1.5px solid var(--light-border);border-radius:6px;padding:.8rem 1rem;font-family:'Familjen Grotesk',sans-serif;font-size:.9rem;color:var(--dark);outline:none;transition:border .3s;background:var(--offwhite);}
+.fg2 input:focus,.fg2 textarea:focus{border-color:var(--blue-light);background:white;}
+.fg2 select option{background:white;}
+.fr3{display:grid;grid-template-columns:1fr 1fr;gap:1rem;}
+.bts{width:100%;padding:.95rem;background:var(--blue);color:white;border:none;border-radius:6px;font-family:'Familjen Grotesk',sans-serif;font-weight:700;font-size:.92rem;cursor:pointer;transition:background .25s;margin-top:.5rem;}
+.bts:hover{background:var(--blue-mid);}
+.fok2{display:none;background:var(--sky);color:var(--blue);border-radius:6px;padding:.9rem;text-align:center;font-size:.88rem;font-weight:600;margin-top:.8rem;border:1px solid var(--light-border);}
+
+/* FOOTER */
+footer{background:var(--dark);color:rgba(255,255,255,.4);padding:50px 4vw 28px;border-top:3px solid var(--blue-mid);}
+.fi{max-width:1200px;margin:0 auto;}
+.ft{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.06);}
+.fbr2 h2{font-family:'Newsreader',serif;font-size:1.6rem;color:var(--orange);margin-bottom:.7rem;}
+.fbr2 p{font-size:.82rem;color:rgba(255,255,255,.38);line-height:1.7;max-width:300px;margin-bottom:1rem;}
+.fof2{background:rgba(45,130,212,.08);border:1px solid rgba(45,130,212,.2);border-radius:6px;padding:.9rem 1.1rem;}
+.fofl2{font-size:.62rem;font-weight:700;color:rgba(45,130,212,.8);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:.4rem;}
+.fof2 p{font-size:.79rem;color:rgba(255,255,255,.38);line-height:1.7;}
+.fof2 strong{color:rgba(255,255,255,.55);}
+.fcc2 h4{font-size:.68rem;font-weight:700;color:rgba(45,130,212,.8);letter-spacing:2.5px;text-transform:uppercase;margin-bottom:1rem;}
+.fcc2 ul{list-style:none;display:flex;flex-direction:column;gap:.55rem;}
+.fcc2 ul a{font-size:.84rem;color:rgba(255,255,255,.38);text-decoration:none;transition:color .25s;}
+.fcc2 ul a:hover{color:var(--orange);}
+.fbt2{padding-top:1.8rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;}
+.fbt2 p{font-size:.76rem;color:rgba(255,255,255,.28);}
+.fbt2 strong{color:rgba(255,255,255,.45);}
+.fbl2{display:flex;gap:1.5rem;}
+.fbl2 a{font-size:.76rem;color:rgba(255,255,255,.28);text-decoration:none;transition:color .25s;}
+.fbl2 a:hover{color:var(--orange);}
+
+/* MODAL */
+.modal-overlay{display:none;position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.85);backdrop-filter:blur(6px);overflow-y:auto;padding:4vh 4vw;}
+.modal-overlay.open{display:flex;align-items:flex-start;justify-content:center;}
+.modal-box{background:white;max-width:800px;width:100%;border-radius:12px;padding:3rem;position:relative;margin:auto;}
+.mc{position:absolute;top:1.2rem;right:1.5rem;background:none;border:none;font-size:1.4rem;cursor:pointer;color:var(--gray);}
+.mc:hover{color:var(--blue-mid);}
+.modal-box h2{font-family:'Newsreader',serif;font-size:1.9rem;color:var(--blue);margin-bottom:.4rem;}
+.mu{font-size:.77rem;color:var(--gray);margin-bottom:1.8rem;}
+.modal-box h3{font-size:.78rem;font-weight:700;color:var(--blue-mid);letter-spacing:1.5px;text-transform:uppercase;margin:1.8rem 0 .5rem;}
+.modal-box p,.modal-box li{font-size:.88rem;line-height:1.8;color:#555;}
+.modal-box ul{padding-left:1.2rem;}
+.mcd{background:var(--sky);border-left:3px solid var(--blue-mid);padding:.9rem 1.1rem;margin:1rem 0;}
+hr.mdiv{border:none;border-top:1px solid #e5e5e5;margin:2rem 0;}
+
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .6s ease,transform .6s ease;}
+.reveal.visible{opacity:1;transform:none;}
+
+@media(max-width:900px){
+  .nav-links{display:none;}.hamburger{display:flex;}
+  .nav-links.open{display:flex;flex-direction:column;position:absolute;top:62px;left:0;right:0;background:white;padding:1.5rem 4vw;border-bottom:1px solid var(--light-border);gap:1rem;}
+  .hero-inner,.sg2,.ctg2{grid-template-columns:1fr;}
+  .hero-right,.sv2{display:none;}
+  .pg2,.dg2{grid-template-columns:1fr 1fr;}
+  .ft{grid-template-columns:1fr;}.fr3{grid-template-columns:1fr;}
+}
+@media(max-width:560px){.pg2,.dg2{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#inicio" class="logo">
+      <div class="logo-sq">O</div>
+      <div><div class="logo-name">Olsson Materiais</div><div class="logo-sub">de Construção</div></div>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#sobre">Sobre</a></li>
+      <li><a href="#produtos">Produtos</a></li>
+      <li><a href="#depoimentos">Clientes</a></li>
+      <li><a href="#contato" class="nav-cta">Orçamento</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<section id="inicio">
+  <div class="hero-grid-bg"></div>
+  <div class="hero-orange-glow"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">🏗️ Balneário Camboriú · Santa Catarina</div>
+      <h1>Tudo para sua <span class="hl">obra</span> em Balneário Camboriú</h1>
+      <p class="hero-desc">Materiais de construção de qualidade, com variedade e atendimento especializado para construtoras, engenheiros e clientes finais em BC e região.</p>
+      <div class="hero-btns">
+        <a href="#contato" class="btn-orange">📋 Solicitar Orçamento</a>
+        <a href="#produtos" class="btn-outline-w">Ver Produtos →</a>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="h-metric"><span class="ico">🏗️</span><div class="val">BC</div><div class="lbl">Balneário Camboriú</div></div>
+      <div class="h-metric"><span class="ico">📦</span><div class="val">+500</div><div class="lbl">Produtos</div></div>
+      <div class="h-metric"><span class="ico">✅</span><div class="val">ATIVA</div><div class="lbl">Situação CNPJ</div></div>
+      <div class="h-metric"><span class="ico">⭐</span><div class="val">100%</div><div class="lbl">Qualidade</div></div>
+    </div>
+  </div>
+  <div class="hero-bar"></div>
+</section>
+
+<section id="sobre">
+  <div class="sg2">
+    <div class="sv2 reveal">
+      <div class="sv2-box">
+        <p style="font-size:.9rem;color:var(--gray);line-height:1.7;">Referência em materiais de construção em Balneário Camboriú e região, atendendo construtoras, empreiteiros e clientes particulares com qualidade e bom preço.</p>
+        <div class="sv2-stats">
+          <div class="sv2-s"><div class="n">SC</div><div class="l">Santa Catarina</div></div>
+          <div class="sv2-s"><div class="n">✅</div><div class="l">Ativa</div></div>
+          <div class="sv2-s"><div class="n">🏗️</div><div class="l">Construção</div></div>
+          <div class="sv2-s"><div class="n">2022</div><div class="l">Fundada</div></div>
+        </div>
+      </div>
+    </div>
+    <div class="st2 reveal">
+      <div class="kicker">Sobre nós</div>
+      <h2>Construindo Balneário Camboriú com qualidade</h2>
+      <p>A <strong>Neto Comercio de Material de Construcao Ltda</strong>, conhecida como <strong>Olsson Materiais de Construção</strong>, atua no comércio varejista de materiais de construção em Balneário Camboriú, SC.</p>
+      <p>Oferecemos uma ampla linha de produtos para construção, reforma e acabamento, além de serviços de transporte de cargas para agilizar sua obra. Atendemos desde clientes finais até grandes construtoras.</p>
+      <div class="cnpj-tag2"><span>CNPJ: 19.364.359/0002-57 · Situação: ATIVA</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="produtos">
+  <div class="sh2 reveal"><div class="kicker" style="justify-content:center;">O que vendemos</div><h2>Nossos Produtos</h2><p>Linha completa para construção, reforma e acabamento em um só lugar.</p></div>
+  <div class="pg2">
+    <div class="pc2 reveal"><span class="pc2-icon">🧱</span><h3>Tijolos e Blocos</h3><p>Tijolos cerâmicos, blocos de concreto e outros materiais estruturais para sua construção.</p></div>
+    <div class="pc2 reveal"><span class="pc2-icon">🪜</span><h3>Cimento e Argamassa</h3><p>Cimentos, argamassas, concreto usinado e materiais de fundação e alvenaria.</p></div>
+    <div class="pc2 reveal"><span class="pc2-icon">🔩</span><h3>Ferragens e Fixação</h3><p>Parafusos, buchas, pregos, pinos e ferragens para montagem, estrutura e acabamento.</p></div>
+    <div class="pc2 reveal"><span class="pc2-icon">🎨</span><h3>Tintas e Acabamento</h3><p>Tintas, vernizes, impermeabilizantes e produtos para acabamento interno e externo.</p></div>
+    <div class="pc2 reveal"><span class="pc2-icon">💧</span><h3>Hidráulica e Elétrica</h3><p>Tubos, conexões, fios, eletrodutos e material hidráulico e elétrico para instalações.</p></div>
+    <div class="pc2 reveal"><span class="pc2-icon">🚚</span><h3>Transporte de Cargas</h3><p>Transporte rodoviário intermunicipal, interestadual e internacional para suas entregas.</p></div>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="sh2 reveal" style="max-width:1200px;margin:0 auto 0;"><div class="kicker" style="justify-content:center;color:var(--orange);"><span style="background:var(--orange);display:block;width:24px;height:2px;"></span>Avaliações</div><h2 style="font-family:'Newsreader',serif;font-size:2.2rem;color:white;">Clientes que confiam em nós</h2></div>
+  <div class="dg2">
+    <div class="dc2 reveal"><div class="ds2">★★★★★</div><p class="dt2">"Compro todo o material para minhas obras na Olsson. Preço justo, produto de qualidade e atendimento ótimo. Indico para todos os colegas da construção!"</p><div class="da2"><div class="dav2">A</div><div><div class="dn2">Alexandre T.</div><div class="dr2">Empreiteiro – Balneário Camboriú</div></div></div></div>
+    <div class="dc2 reveal"><div class="ds2">★★★★★</div><p class="dt2">"Atenderam minha construtora com urgência em um projeto grande. Entrega pontual e material 100%. Parceria que vai continuar com certeza!"</p><div class="da2"><div class="dav2">M</div><div><div class="dn2">Marcelo S.</div><div class="dr2">Construtor – BC/SC</div></div></div></div>
+    <div class="dc2 reveal"><div class="ds2">★★★★★</div><p class="dt2">"Reformei meu apartamento em BC e comprei todo o material aqui. Atendimento excelente, me orientaram em tudo. Resultado ficou lindo!"</p><div class="da2"><div class="dav2">J</div><div><div class="dn2">Juliana P.</div><div class="dr2">Moradora de BC</div></div></div></div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="ctg2">
+    <div class="cti2 reveal">
+      <div class="kicker">Fale conosco</div>
+      <h2>Solicite seu Orçamento</h2>
+      <p>Entre em contato para orçamentos, consulta de estoque ou informações sobre entrega.</p>
+      <div class="ci2"><div class="ci2-icon">📍</div><div><h4>Endereço</h4><p>AV QUINTA AVENIDA, 865<br>DOS MUNICIPIOS – BALNEARIO CAMBORIU – SC<br>CEP: 88.337-300</p></div></div>
+      <div class="ci2"><div class="ci2-icon">📞</div><div><h4>Telefone</h4><a href="tel:+554733600328">(47) 3360-0328</a></div></div>
+      <div class="ci2"><div class="ci2-icon">✉️</div><div><h4>E-mail</h4><a href="mailto:OLSSONNETO@GMAIL.COM">OLSSONNETO@GMAIL.COM</a></div></div>
+      <div class="ci2"><div class="ci2-icon">🕐</div><div><h4>Horário</h4><p>Segunda a Sexta: 07h30 – 18h<br>Sábado: 07h30 – 12h</p></div></div>
+    </div>
+    <div class="fbox reveal">
+      <h3>Envie sua solicitação</h3>
+      <form id="cForm" onsubmit="sf(event)">
+        <div class="fr3">
+          <div class="fg2"><label>Nome</label><input type="text" placeholder="Seu nome" required></div>
+          <div class="fg2"><label>Telefone</label><input type="tel" placeholder="(47) 9 0000-0000" required></div>
+        </div>
+        <div class="fg2"><label>E-mail</label><input type="email" placeholder="seu@email.com"></div>
+        <div class="fg2"><label>Produto/serviço</label>
+          <select><option value="">Selecione...</option><option>Tijolos e Blocos</option><option>Cimento e Argamassa</option><option>Ferragens</option><option>Tintas e Acabamento</option><option>Hidráulica e Elétrica</option><option>Transporte de Cargas</option><option>Outro</option></select>
+        </div>
+        <div class="fg2"><label>Mensagem</label><textarea rows="4" placeholder="Descreva o que precisa..." required></textarea></div>
+        <button type="submit" class="bts">🏗️ Solicitar Orçamento</button>
+        <div class="fok2" id="fok2">✓ Mensagem enviada! Retornaremos em breve.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="fi">
+    <div class="ft">
+      <div class="fbr2">
+        <h2>Olsson Materiais de Construção</h2>
+        <p>Materiais de construção, ferragens e transporte em Balneário Camboriú/SC.</p>
+        <div class="fof2"><div class="fofl2">Dados Oficiais</div>
+          <p><strong>NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA</strong><br>CNPJ: <strong>19.364.359/0002-57</strong><br>AV QUINTA AVENIDA, 865<br>DOS MUNICIPIOS – BALNEARIO CAMBORIU – SC<br>CEP: 88.337-300<br>Tel: (47) 3360-0328<br>E-mail: OLSSONNETO@GMAIL.COM</p>
+        </div>
+      </div>
+      <div class="fcc2"><h4>Produtos</h4><ul><li><a href="#produtos">Tijolos e Blocos</a></li><li><a href="#produtos">Cimento</a></li><li><a href="#produtos">Ferragens</a></li><li><a href="#produtos">Tintas</a></li><li><a href="#produtos">Transporte</a></li></ul></div>
+      <div class="fcc2"><h4>Institucional</h4><ul><li><a href="#sobre">Sobre Nós</a></li><li><a href="#contato">Contato</a></li><li><a href="#" onclick="openModal('priv')">Política de Privacidade</a></li><li><a href="#" onclick="openModal('terms')">Termos de Uso</a></li></ul></div>
+    </div>
+    <div class="fbt2">
+      <div><p>© 2026 <strong>NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA</strong> - Todos os direitos reservados.</p><p>CNPJ: <strong>19.364.359/0002-57</strong> · AV QUINTA AVENIDA, 865, DOS MUNICIPIOS, BALNEARIO CAMBORIU – SC, CEP: 88.337-300 · Tel: (47) 3360-0328</p></div>
+      <div class="fbl2"><a href="#" onclick="openModal('priv')">Privacidade</a><a href="#" onclick="openModal('terms')">Termos</a></div>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-overlay" id="modal-priv"><div class="modal-box"><button class="mc" onclick="closeModal('priv')">✕</button>
+  <h2>Política de Privacidade</h2><p class="mu">Última atualização: abril de 2026</p>
+  <div class="mcd"><p><strong>NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA</strong> | CNPJ: 19.364.359/0002-57<br>AV QUINTA AVENIDA, 865 – DOS MUNICIPIOS – BALNEARIO CAMBORIU – SC – CEP: 88.337-300<br>Tel: (47) 3360-0328 | E-mail: OLSSONNETO@GMAIL.COM</p></div>
+  <h3>1. Controlador</h3><p>Neto Comercio de Material de Construcao Ltda, CNPJ 19.364.359/0002-57, é responsável pelo tratamento dos dados pessoais deste site.</p>
+  <h3>2. Dados coletados</h3><p>Coletamos nome, telefone, e-mail e mensagem ao preencher o formulário de contato.</p>
+  <h3>3. Finalidade</h3><p>Os dados são usados exclusivamente para atender sua solicitação e contato comercial.</p>
+  <h3>4. Compartilhamento</h3><p>Não vendemos ou compartilhamos dados com terceiros, exceto por obrigação legal.</p>
+  <h3>5. Direitos LGPD</h3><p>Solicite acesso ou exclusão dos seus dados pelo e-mail OLSSONNETO@GMAIL.COM.</p>
+  <hr class="mdiv"><p style="font-size:.78rem;color:#aaa;">© 2026 NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA – CNPJ 19.364.359/0002-57</p>
+</div></div>
+<div class="modal-overlay" id="modal-terms"><div class="modal-box"><button class="mc" onclick="closeModal('terms')">✕</button>
+  <h2>Termos de Uso</h2><p class="mu">Última atualização: abril de 2026</p>
+  <div class="mcd"><p><strong>NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA</strong> | CNPJ: 19.364.359/0002-57<br>AV QUINTA AVENIDA, 865 – DOS MUNICIPIOS – BALNEARIO CAMBORIU – SC – CEP: 88.337-300</p></div>
+  <h3>1. Aceitação</h3><p>Ao acessar este site, você concorda com estes Termos de Uso.</p>
+  <h3>2. Sobre a empresa</h3><p>Site da Neto Comercio de Material de Construcao Ltda, CNPJ 19.364.359/0002-57, situação ATIVA, atuante em materiais de construção e transporte.</p>
+  <h3>3. Uso do site</h3><p>Site informativo. Orçamentos confirmados via contato direto. Preços e disponibilidade sujeitos a alteração.</p>
+  <h3>4. Foro</h3><p>Fica eleito o foro da Comarca de Balneário Camboriú – SC.</p>
+  <hr class="mdiv"><p style="font-size:.78rem;color:#aaa;">© 2026 NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA – CNPJ 19.364.359/0002-57</p>
+</div></div>
+
+<script>
+const hb=document.getElementById('hamburger'),nl=document.getElementById('navLinks');
+hb.addEventListener('click',()=>nl.classList.toggle('open'));
+document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>nl.classList.remove('open')));
+const obs=new IntersectionObserver((es)=>es.forEach((e,i)=>{if(e.isIntersecting){setTimeout(()=>e.target.classList.add('visible'),i*70);obs.unobserve(e.target);}}),{threshold:.1});
+document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
+function sf(e){e.preventDefault();const b=e.target.querySelector('button');b.textContent='Enviando...';b.disabled=true;setTimeout(()=>{document.getElementById('fok2').style.display='block';b.textContent='🏗️ Solicitar Orçamento';b.disabled=false;e.target.reset();setTimeout(()=>document.getElementById('fok2').style.display='none',5000);},1000);}
+function openModal(id){event.preventDefault();document.getElementById('modal-'+id).classList.add('open');document.body.style.overflow='hidden';}
+function closeModal(id){document.getElementById('modal-'+id).classList.remove('open');document.body.style.overflow='';}
+document.querySelectorAll('.modal-overlay').forEach(m=>m.addEventListener('click',e=>{if(e.target===m){m.classList.remove('open');document.body.style.overflow='';}}));
+document.addEventListener('keydown',e=>{if(e.key==='Escape')document.querySelectorAll('.modal-overlay.open').forEach(m=>{m.classList.remove('open');document.body.style.overflow='';});});
+</script>
+</body>
+</html>

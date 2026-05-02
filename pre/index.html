@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script>
+      document.addEventListener("click", (e) => {
+        const link = e.target.closest("a")
+        if (!link) return
+
+        const href = link.getAttribute("href")
+        if (
+          !href ||
+          href.startsWith("#") ||
+          href.startsWith("mailto:") ||
+          href.startsWith("tel:") ||
+          href.startsWith("javascript:")
+        )
+          return
+
+        // Ignora se o usuário quer abrir em nova aba (ctrl/cmd/middle-click)
+        if (e.ctrlKey || e.metaKey || e.shiftKey || e.button === 1) return
+
+        try {
+          const url = new URL(href, window.location.origin)
+          if (url.origin !== window.location.origin) return
+
+          const currentParams = new URLSearchParams(window.location.search)
+          if (currentParams.toString() === "") return
+
+          currentParams.forEach((value, key) => {
+            if (!url.searchParams.has(key)) {
+              url.searchParams.set(key, value)
+            }
+          })
+
+          e.preventDefault()
+          window.location.href = url.pathname + url.search + url.hash
+        } catch (err) {
+          console.warn("Erro ao processar link:", err)
+        }
+      })
+    </script>
+
+    <script>
+      window.googlePixelId = "69f68cfb2e473bda4a55b14c"
+      var a = document.createElement("script")
+      a.setAttribute("async", "")
+      a.setAttribute("defer", "")
+      a.setAttribute(
+        "src",
+        "https://cdn.utmify.com.br/scripts/pixel/pixel-google.js",
+      )
+      document.head.appendChild(a)
+    </script>
+    <script
+      src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+      data-utmify-prevent-xcod-sck
+      data-utmify-prevent-subids
+      data-utmify-ignore-iframe
+      data-utmify-is-cartpanda
+      async
+      defer
+    ></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>News</title>
+    <meta
+      name="description"
+      content="Join over 50,000 students who transformed their lives with our complete 90-day wellness training program. Guaranteed results or your money back."
+    />
+    <meta property="og:title" content="News" />
+    <meta
+      property="og:description"
+      content="Join over 50,000 students who transformed their lives with our complete 90-day wellness training program."
+    />
+    <meta
+      property="og:image"
+      content="https://bolt.new/static/og_default.png"
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="News" />
+    <meta
+      name="twitter:description"
+      content="Join over 50,000 students who transformed their lives with our complete 90-day wellness training program."
+    />
+    <meta
+      name="twitter:image"
+      content="https://bolt.new/static/og_default.png"
+    />
+    <meta
+      name="company-name"
+      content="NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA"
+    />
+    <meta name="company-phone" content="(47) 3360-0328" />
+    <meta name="company-email" content="OLSSONNETO@GMAIL.COM" />
+    <meta
+      name="company-address"
+      content="AV QUINTA AVENIDA, 865, DOS MUNICIPIOS – BALNEARIO CAMBORIU – SC, CEP: 88.337-300"
+    />
+    <meta name="company-number" content="CNPJ: 19.364.359/0002-57" />
+    <style>
+      *,
+      :before,
+      :after {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+      }
+      html {
+        line-height: 1.5;
+        -webkit-text-size-adjust: 100%;
+        font-family:
+          ui-sans-serif,
+          system-ui,
+          sans-serif,
+          "Apple Color Emoji",
+          "Segoe UI Emoji",
+          Segoe UI Symbol,
+          "Noto Color Emoji";
+        -webkit-tap-highlight-color: transparent;
+      }
+      body {
+        margin: 0;
+        line-height: inherit;
+      }
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-size: inherit;
+        font-weight: inherit;
+      }
+      b,
+      strong {
+        font-weight: bolder;
+      }
+      button,
+      input,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        font-weight: inherit;
+        line-height: inherit;
+        color: inherit;
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        text-transform: none;
+        -webkit-appearance: button;
+        appearance: button;
+        background-color: transparent;
+        background-image: none;
+        cursor: pointer;
+      }
+      img,
+      svg {
+        display: block;
+      }
+      p {
+        margin: 0;
+      }
+      .zwz-7at {
+        position: absolute;
+      }
+      .xny-7wr {
+        position: relative;
+      }
+      .yay-hdi {
+        right: 2rem;
+      }
+      .tag-cbm {
+        top: 2rem;
+      }
+      .fme-wrf {
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .mre-nal {
+        margin-bottom: 0.25rem;
+      }
+      .rhp-ekj {
+        margin-bottom: 0.5rem;
+      }
+      .suw-xi6 {
+        margin-bottom: 1.5rem;
+      }
+      .xcl-7ip {
+        margin-bottom: 2rem;
+      }
+      .nob-1yu {
+        margin-top: 2rem;
+      }
+      .wjd-cqc {
+        display: flex;
+      }
+      .cnx-v96 {
+        height: 0.25rem;
+      }
+      .ttb-utn {
+        height: 0.75rem;
+      }
+      .fnr-dhu {
+        height: 1rem;
+      }
+      .qgi-ccj {
+        min-height: 100vh;
+      }
+      .oih-y7t {
+        width: 0.75rem;
+      }
+      .nyl-rvr {
+        width: 1rem;
+      }
+      .ovw-nmq {
+        width: 2rem;
+      }
+      .bra-smd {
+        width: 100%;
+      }
+      .sxs-5vq {
+        max-width: 42rem;
+      }
+      .zaz-nim {
+        max-width: 64rem;
+      }
+      .hil-e1y {
+        max-width: 72rem;
+      }
+      .rlw-7bg {
+        flex: 1 1 0%;
+      }
+      .mip-f7o {
+        cursor: pointer;
+      }
+      .fiv-j4h {
+        flex-direction: column;
+      }
+      .rdg-1c2 {
+        align-items: center;
+      }
+      .qvm-e34 {
+        justify-content: center;
+      }
+      .bdv-n1v {
+        gap: 0.5rem;
+      }
+      .wih-7xd {
+        gap: 1.5rem;
+      }
+      .mtu-6ns > :not([hidden]) ~ :not([hidden]) {
+        --tw-space-y-reverse: 0;
+        margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+        margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+      }
+      .wbb-wg2 {
+        border-radius: 1rem;
+      }
+      .qsy-ny1 {
+        border-radius: 9999px;
+      }
+      .frv-8j0 {
+        border-radius: 0.5rem;
+      }
+      .jip-zl3 {
+        background-color: rgb(37 99 235);
+      }
+      .fpv-nex {
+        background-color: rgb(29 78 216);
+      }
+      .tda-dht {
+        background-color: rgb(229 231 235);
+      }
+      .uek-yj6 {
+        background-color: rgb(51 65 85);
+      }
+      .nrj-qxm {
+        background-color: #fff;
+      }
+      .fid-wxk {
+        padding: 2rem 0;
+      }
+      .kcc-5sj {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+      .oun-oba {
+        padding-left: 3rem;
+        padding-right: 3rem;
+      }
+      .bze-mnz {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+      .spd-ylb {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+      }
+      .jwr-fii {
+        text-align: center;
+      }
+      .upw-n43 {
+        font-size: 0.75rem;
+        line-height: 1rem;
+      }
+      .msu-cl0 {
+        font-size: 0.875rem;
+        line-height: 1.25rem;
+      }
+      .kza-1ia {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+      }
+      .szb-nj4 {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+      }
+      .mgr-3am {
+        font-weight: 700;
+      }
+      .fan-jfh {
+        font-weight: 600;
+      }
+      .nhr-n9u {
+        fill: #2563eb;
+      }
+      .ewj-tvy {
+        color: rgb(37 99 235);
+      }
+      .mmv-vlu {
+        color: rgb(209 213 219);
+      }
+      .cob-zz7 {
+        color: rgb(156 163 175);
+      }
+      .xaf-oah {
+        color: rgb(107 114 128);
+      }
+      .ezp-9yc {
+        color: rgb(30 41 59);
+      }
+      .hns-s9x {
+        color: #fff;
+      }
+      .bsb-nup {
+        text-decoration-line: underline;
+      }
+      .bjn-sgf {
+        --tw-shadow:
+          0 10px 15px -3px rgb(0 0 0/0.1), 0 4px 6px -4px rgb(0 0 0/0.1);
+        box-shadow:
+          var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+      }
+      .diy-1rn {
+        transition-property:
+          color, background-color, border-color, fill, stroke;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 0.15s;
+      }
+      .zxp-k8x {
+        transition-duration: 0.2s;
+      }
+      .nrw-6c7:hover {
+        background-color: rgb(30 64 175);
+      }
+      .yio-ovg:hover {
+        color: #fff;
+      }
+      .xsd-kye {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 0;
+        background: #000;
+      }
+      #m4x-over {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 50;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+      }
+      #m4x-over.avo-0hq {
+        display: flex;
+      }
+      #b9r-wrap {
+        background: #fff;
+        border-radius: 1rem;
+        max-width: 42rem;
+        width: 100%;
+        max-height: 90vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+      }
+      #h2k-head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.25rem 1.5rem;
+        border-bottom: 1px solid #e5e7eb;
+        flex-shrink: 0;
+      }
+      #t5p-titl {
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: rgb(30 41 59);
+        margin: 0;
+      }
+      #c7n-shut {
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: rgb(107 114 128);
+        font-size: 1.5rem;
+        line-height: 1;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+      }
+      #c7n-shut:hover {
+        color: rgb(30 41 59);
+        background: rgb(243 244 246);
+      }
+      #d3w-body {
+        overflow-y: auto;
+        padding: 1.5rem;
+        color: rgb(71 85 105);
+        font-size: 0.875rem;
+        line-height: 1.7;
+      }
+      #d3w-body h2 {
+        font-size: 0.9375rem;
+        font-weight: 700;
+        color: rgb(30 41 59);
+        margin: 1.25rem 0 0.4rem;
+      }
+      #d3w-body h2:first-child {
+        margin-top: 0;
+      }
+      #d3w-body p {
+        margin-bottom: 0.75rem;
+      }
+      #d3w-body ul {
+        list-style: disc;
+        padding-left: 1.5rem;
+        margin-bottom: 0.75rem;
+      }
+      #d3w-body ul li {
+        margin-bottom: 0.25rem;
+      }
+      #d3w-body .lwz-2ya {
+        font-size: 0.75rem;
+        color: rgb(156 163 175);
+        margin-bottom: 1.25rem;
+      }
+      #d3w-body .cuk-tgv {
+        margin-bottom: 1rem;
+      }
+      #d3w-body .aiy-f1v {
+        font-weight: 700;
+        color: rgb(30 41 59);
+        font-size: 0.8125rem;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 0.2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root">
+      <div class="qgi-ccj tda-dht wjd-cqc fiv-j4h">
+        <main class="rlw-7bg wjd-cqc rdg-1c2 qvm-e34 kcc-5sj spd-ylb">
+          <div class="nrj-qxm wbb-wg2 bjn-sgf sxs-5vq bra-smd fid-wxk xny-7wr">
+            <div class="zwz-7at tag-cbm yay-hdi wjd-cqc rdg-1c2 bdv-n1v">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="nyl-rvr fnr-dhu ewj-tvy nhr-n9u"
+              >
+                <polygon points="5 3 19 12 5 21 5 3"></polygon>
+              </svg>
+              <div class="ovw-nmq cnx-v96 jip-zl3 qsy-ny1"></div>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="oih-y7t ttb-utn ewj-tvy nhr-n9u"
+              >
+                <circle cx="12" cy="12" r="10"></circle>
+              </svg>
+            </div>
+            <div class="jwr-fii nob-1yu">
+              <h1 class="szb-nj4 mgr-3am ezp-9yc rhp-ekj">
+                Watch the tutorial
+              </h1>
+              <h2 class="szb-nj4 mgr-3am ezp-9yc xcl-7ip">FOR FREE!</h2>
+              <p class="xaf-oah xcl-7ip">Click the button below.</p>
+              <div>
+                <a
+                  href="next"
+                  class="fpv-nex nrw-6c7 hns-s9x fan-jfh oun-oba bze-mnz frv-8j0 kza-1ia diy-1rn zxp-k8x mip-f7o"
+                >
+                  CLICK HERE TO WATCH
+                </a>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer class="uek-yj6 hns-s9x spd-ylb">
+          <div class="hil-e1y fme-wrf kcc-5sj">
+            <div class="jwr-fii suw-xi6">
+              <h3 class="kza-1ia fan-jfh rhp-ekj">
+                NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA
+              </h3>
+              <p class="msu-cl0 mmv-vlu mre-nal">
+                AV QUINTA AVENIDA, 865, DOS MUNICIPIOS – BALNEARIO CAMBORIU –
+                SC, CEP: 88.337-300
+              </p>
+              <p class="msu-cl0 mmv-vlu">
+                <span class="fan-jfh">Email:</span> OLSSONNETO@GMAIL.COM |
+                <span class="fan-jfh">Phone:</span> (47) 3360-0328
+              </p>
+            </div>
+            <div class="wjd-cqc qvm-e34 wih-7xd xcl-7ip msu-cl0">
+              <button
+                class="mmv-vlu yio-ovg bsb-nup diy-1rn"
+                onclick="openModal('privacy')"
+              >
+                Privacy Policy
+              </button>
+              <span class="xaf-oah">|</span>
+              <button
+                class="mmv-vlu yio-ovg bsb-nup diy-1rn"
+                onclick="openModal('terms')"
+              >
+                Terms of Use
+              </button>
+              <span class="xaf-oah">|</span>
+              <button
+                class="mmv-vlu yio-ovg bsb-nup diy-1rn"
+                onclick="openModal('contact')"
+              >
+                Contact
+              </button>
+            </div>
+            <div class="upw-n43 cob-zz7 jwr-fii mtu-6ns zaz-nim fme-wrf">
+              <p>
+                Copyright &copy; 2026 NETO COMERCIO DE MATERIAL DE CONSTRUCAO
+                LTDA. All rights reserved. Unauthorized reproduction or
+                distribution of any content on this website is strictly
+                prohibited and may result in legal action.
+              </p>
+              <p>
+                This website is not affiliated with, endorsed by, or in any way
+                connected to Google&#8482;, YouTube&#8482;, or any of their
+                subsidiaries. Google&#8482; and YouTube&#8482; are trademarks of
+                their respective owners.
+              </p>
+              <p>
+                The information presented on this website has not been evaluated
+                by the Food &amp; Drug Administration (FDA), the European Food
+                Safety Authority (EFSA), or any other regulatory body. This
+                content is intended for educational purposes only and does not
+                constitute medical advice. Nothing on this site should be
+                interpreted as an attempt to diagnose, treat, cure, or prevent
+                any illness or disease. This product is not a substitute for a
+                balanced diet or a healthy lifestyle. Always consult a qualified
+                healthcare professional before following any protocol, starting
+                any supplement, or making changes to your health routine —
+                particularly if you are pregnant, nursing, taking medication, or
+                have a pre-existing medical condition.
+              </p>
+              <p>
+                Individual results may vary and are not guaranteed. Outcomes
+                depend on a range of factors including genetics, diet,
+                metabolism, and level of physical activity. No result shown or
+                described on this website should be considered typical. Some
+                names and identifying details have been changed to protect
+                individual privacy.
+              </p>
+              <p>
+                In compliance with 16 CFR Part 255 and FTC guidelines on
+                endorsements and testimonials: any testimonials or statements
+                presented on this site reflect the genuine experience of the
+                individuals depicted and were provided voluntarily, without
+                compensation or exchange of free products or services. These
+                experiences are not representative of all users and do not
+                guarantee similar outcomes for others. The content on this
+                website is provided strictly "as is" and "as available," based
+                on the author's opinions. We encourage you to conduct your own
+                research and seek independent professional advice before acting
+                on any information presented here.
+              </p>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <div id="m4x-over" onclick="if (event.target === this) closeModal()">
+      <div id="b9r-wrap">
+        <div id="h2k-head">
+          <h2 id="t5p-titl"></h2>
+          <button id="c7n-shut" onclick="closeModal()" aria-label="Close">
+            &#x2715;
+          </button>
+        </div>
+        <div id="d3w-body"></div>
+      </div>
+    </div>
+    <script>
+      var contents = {
+        privacy: {
+          title: "Privacy Policy",
+          html: '<p class="lwz-2ya">Last revised: February 2024</p><h2>1. About This Document</h2><p>NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA values your privacy. This document describes the types of personal information we handle when you use our website, how that information is used, and the rights available to you under applicable law.</p><h2>2. Data We Collect</h2><p>Depending on how you interact with our platform, we may gather:</p><ul><li><strong>Identification data:</strong> name, username, or similar identifiers</li><li><strong>Contact data:</strong> email address, phone number, billing address</li><li><strong>Financial data:</strong> payment card or bank account details</li><li><strong>Transaction data:</strong> records of payments made or received</li><li><strong>Technical data:</strong> IP address, browser type, time zone, operating system</li><li><strong>Behavioral data:</strong> how you navigate and use our website</li><li><strong>Marketing preferences:</strong> your choices regarding promotional communications</li></ul><h2>3. Purpose of Processing</h2><p>We handle your personal data only when lawfully permitted. Common purposes include:</p><ul><li>Fulfilling and delivering your orders</li><li>Managing your account and providing support</li><li>Sending purchase-related communications</li><li>Improving our platform, products, and services</li><li>Sending promotional content (where you have consented)</li><li>Detecting and preventing fraudulent activity</li></ul><h2>4. Security Measures</h2><p>We maintain technical and organizational safeguards to protect your data against unauthorized access, loss, or disclosure. Access is limited to personnel and partners who require it for legitimate business purposes.</p><h2>5. How Long We Keep Your Data</h2><p>We retain personal data only for as long as needed to achieve the purposes described in this policy, including compliance with legal or accounting obligations. Retention periods are defined based on the nature and sensitivity of the data involved.</p><h2>6. Your Rights</h2><p>Subject to applicable law, you may exercise the following rights regarding your personal data:</p><ul><li>Access and obtain a copy of your data</li><li>Correct inaccurate or outdated information</li><li>Request deletion of your data</li><li>Object to or restrict certain processing activities</li><li>Request portability of your data</li><li>Withdraw consent at any time where processing is consent-based</li></ul><h2>7. Cookies</h2><p>We use cookies to distinguish visitors and enhance browsing experience. A cookie is a small text file placed on your device. You can control cookie settings through your browser, though disabling them may affect site functionality.</p><h2>8. External Links</h2><p>Our site may contain links to third-party websites. We do not control those sites and are not responsible for their privacy practices. We encourage you to review their policies before sharing any personal data.</p><h2>9. Policy Updates</h2><p>We may revise this policy periodically. Changes will be posted on this page with an updated revision date. Continued use of our services after changes constitutes acceptance of the updated policy.</p><h2>10. How to Reach Us</h2><p>For questions about this privacy policy or how we handle your data, please use the contact details provided on our website.</p>',
+        },
+        terms: {
+          title: "Terms of Use",
+          html: '<p class="lwz-2ya">Last revised: February 2024</p><h2>1. Acceptance of Terms</h2><p>By accessing or using the services of NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA, you confirm that you have read, understood, and agree to be bound by these Terms. If you do not agree, please refrain from using our services.</p><h2>2. License to Access</h2><p>We grant you a limited, non-exclusive, non-transferable license to access our website materials for personal, non-commercial purposes. This license does not include the right to:</p><ul><li>Alter or reproduce the materials</li><li>Use them for commercial purposes or public display</li><li>Attempt to decompile or reverse-engineer any software on the site</li><li>Remove copyright or proprietary notices</li><li>Transfer or mirror the materials on another server</li></ul><h2>3. Program Access and Delivery</h2><p>After a successful purchase, you will receive immediate access to the digital program. Login credentials will be delivered to the email address you provided. You are responsible for keeping your account information secure.</p><h2>4. Refund Policy</h2><p>We provide a 30-day satisfaction guarantee. If the program does not meet your expectations, you may submit a full refund request within 30 days of purchase by contacting our support team with your order information.</p><h2>5. Account Responsibilities</h2><p>When registering, you must provide truthful and accurate information. You are solely responsible for:</p><ul><li>Keeping your login credentials confidential</li><li>Controlling access to your account</li><li>All actions carried out under your account</li></ul><h2>6. Intellectual Property</h2><p>All content, features, and functionality on this platform are the exclusive property of NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA and are protected by copyright and other applicable laws. Course materials are for your personal use only and must not be shared, copied, or commercially exploited.</p><h2>7. Prohibited Conduct</h2><p>You agree not to use our services to:</p><ul><li>Engage in or encourage unlawful activity</li><li>Violate any applicable regulation or ordinance</li><li>Infringe upon intellectual property or other rights</li><li>Harass, defame, or discriminate against any person</li><li>Submit false or misleading information</li><li>Distribute malware or harmful code</li></ul><h2>8. No Warranties</h2><p>All materials are provided on an "as is" basis. We make no express or implied warranties, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. Use of our services is at your own discretion and risk.</p><h2>9. Limitation of Liability</h2><p>To the maximum extent permitted by law, NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA shall not be liable for any indirect, incidental, or consequential damages arising from the use of or inability to use our services, even if we have been advised of the possibility of such damages.</p><h2>10. Third-Party Services</h2><p>Our platform may link to external websites or services not operated by us. We assume no responsibility for their content, privacy practices, or availability, and we encourage you to review their terms independently.</p><h2>11. Changes to These Terms</h2><p>We reserve the right to update these Terms at any time. Significant changes will be communicated with at least 30 days\'  notice where feasible. Continued use of our services after changes take effect constitutes your acceptance of the revised Terms.</p><h2>12. Governing Law</h2><p>These Terms are governed by the laws of the jurisdiction where NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA operates, without reference to conflict-of-law rules.</p><h2>13. Questions</h2><p>If you have any questions about these Terms, please reach out using the contact details available on our website.</p>',
+        },
+        contact: {
+          title: "Contact",
+          html: '<p>We\'d love to hear from you. Reach out through any of the channels below and our team will get back to you as soon as possible.</p><div class="cuk-tgv"><div class="aiy-f1v">Company Name</div><p>NETO COMERCIO DE MATERIAL DE CONSTRUCAO LTDA</p></div><div class="cuk-tgv"><div class="aiy-f1v">Email</div><p><a href="mailto:OLSSONNETO@GMAIL.COM" style="color:rgb(29 78 216)">OLSSONNETO@GMAIL.COM</a></p></div><div class="cuk-tgv"><div class="aiy-f1v">Phone</div><p>(47) 3360-0328</p></div><div class="cuk-tgv"><div class="aiy-f1v">Address</div><p>AV QUINTA AVENIDA, 865, DOS MUNICIPIOS – BALNEARIO CAMBORIU – SC, CEP: 88.337-300</p></div><div class="cuk-tgv"><div class="aiy-f1v">Registration</div><p>CNPJ: 19.364.359/0002-57</p></div>',
+        },
+      }
+
+      function openModal(key) {
+        var c = contents[key]
+        document.getElementById("t5p-titl").textContent = c.title
+        document.getElementById("d3w-body").innerHTML = c.html
+        document.getElementById("d3w-body").scrollTop = 0
+        document.getElementById("m4x-over").classList.add("avo-0hq")
+        document.body.style.overflow = "hidden"
+      }
+
+      function closeModal() {
+        document.getElementById("m4x-over").classList.remove("avo-0hq")
+        document.body.style.overflow = ""
+      }
+
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape") closeModal()
+      })
+    </script>
+  </body>
+</html>
